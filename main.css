@@ -31,9 +31,9 @@ body {
 
 .parallax {
   background-image: url("/src/2.jpg");
-  min-height: 2500px;
+  min-height: 1500px;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
 }
