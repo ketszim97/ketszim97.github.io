@@ -30,7 +30,7 @@ body {
 }
 
 .parallax {
-  background-image: src = "src/2.jpg";
+  background-image: url("/src/2.jpg");
   min-height: 2500px;
   background-attachment: fixed;
   background-position: center;
