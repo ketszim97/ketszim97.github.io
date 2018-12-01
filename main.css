@@ -32,13 +32,14 @@ body {
 }
 
 .page-description {
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: "Helvetica";
-  font-size: 30px;s
-  border: 1px solid #000;
-  margin: 2px;
+  font-size: 30px;
+  margin: 0px;
   text-align: center;
-  padding: 220px;
+  padding: 120px;
   color: #000;
+  opacity: 0.9;
 }
 
 
