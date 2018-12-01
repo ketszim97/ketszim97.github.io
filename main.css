@@ -12,22 +12,35 @@ body {
 }
 
 .page-title {
+  position: fixed;
   text-align: center;
-  font-family: "Helvetica";
-  font-size: 40px;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin: 2px;
-  padding: 30px;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+  filter: blur(0px);
+  transition: opacity 0.2s;
+ -webkit-transition: opacity 0.2s;
+ opacity: 0.2;
+}
+
+.page-title:hover{
+     text-shadow: 3px 3px 3px #C9C9C9;
+     opacity: 1;
 }
 
 .page-description {
   font-family: "Helvetica";
-  font-size: 20px;s
+  font-size: 30px;s
   border: 1px solid #000;
   margin: 2px;
   text-align: center;
-  padding: 30px;
+  padding: 220px;
+  color: #000;
 }
+
 
 .parallax {
   background-image: url("/src/2.jpg");
@@ -36,4 +49,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+ul {
+  height: 10px;
+  margin: 0px auto 1500 auto;
+
+}
+
+li {
+  float: left;
+  list-style: none;
+  margin: 5px 75px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #000;
+  text-align: center;
 }
