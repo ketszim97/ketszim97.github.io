@@ -25,24 +25,25 @@ body {
  -webkit-transition: opacity 0.2s;
  opacity: 0.2;
 }
-
 .page-title:hover{
+     opacity: 1;
+}
+a:hover{
      text-shadow: 3px 3px 3px #C9C9C9;
      opacity: 1;
 }
 
 .page-description {
-  background-color: rgba(0, 0, 0, 0.1);
+
   font-family: "Helvetica";
   font-size: 30px;
   margin: 0px;
   text-align: center;
   padding: 120px;
   color: #000;
-  opacity: 0.9;
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-
-
 .parallax {
   background-image: url("/src/2.jpg");
   min-height: 1500px;
@@ -58,12 +59,48 @@ ul {
 
 }
 
-li {
+a {
   float: left;
   list-style: none;
-  margin: 5px 75px;
+  margin: 0px 75px;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #000;
   text-align: center;
+  text-decoration: none;
+
+
+}
+
+
+a[ id= "aboutMe" ]:target ~ #menuBar article.panel {
+  -webkit-transform: translateY(0px);
+  transform: translateY( 0px );
+}
+
+a[ id= "completedProjects" ]:target ~ #menuBar article.panel {
+  -webkit-transform: translateY(-1200px);
+  transform: translateY(-1200px);
+}
+
+a[ id= "projectsInProgress" ]:target ~ #menuBar article.panel {
+  -webkit-transform: translateY(0);
+  transform: translateY( 0 );
+}
+
+a[ id= "contactMe" ]:target ~ #menuBar article.panel {
+  -webkit-transform: translateY( 0);
+  transform: translateY( 0 );
+}
+
+.panel {
+  width: 100%;
+  height: 0px; /* Your DIVs Height */
+  z-index:0;
+  -webkit-transform: translateZ( 0 );
+  transform: translateZ( 0 );
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
