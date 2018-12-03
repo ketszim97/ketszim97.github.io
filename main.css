@@ -20,7 +20,6 @@ body {
   margin: 0px;
   padding: 10px;
   width: 100%;
-  filter: blur(0px);
   transition: opacity 0.2s;
  -webkit-transition: opacity 0.2s;
  opacity: 0.2;
@@ -53,6 +52,9 @@ a:hover{
   background-size: cover;
 }
 
+.blur{
+     filter:blur(5px);
+}
 ul {
   height: 10px;
   margin: 0px auto 1500 auto;
@@ -79,18 +81,18 @@ a[ id= "aboutMe" ]:target ~ #menuBar article.panel {
 }
 
 a[ id= "completedProjects" ]:target ~ #menuBar article.panel {
+  -webkit-transform: translateY(-1400px);
+  transform: translateY(-1400px);
+}
+
+a[ id= "projectsInProgress" ]:target ~ #menuBar article.panel {
   -webkit-transform: translateY(-1200px);
   transform: translateY(-1200px);
 }
 
-a[ id= "projectsInProgress" ]:target ~ #menuBar article.panel {
-  -webkit-transform: translateY(0);
-  transform: translateY( 0 );
-}
-
 a[ id= "contactMe" ]:target ~ #menuBar article.panel {
-  -webkit-transform: translateY( 0);
-  transform: translateY( 0 );
+  -webkit-transform: translateY(-1200px);
+  transform: translateY(-1200px);
 }
 
 .panel {

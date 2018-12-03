@@ -1,20 +1,14 @@
 $(window).scroll(function() {
 // 100 = The point you would like to fade the nav in.
 
-	if ($(window).scrollTop() > 100 ){
+	if ($(window).scrollTop() > 1){
 
- 		$('.page-title').addClass('show');
+ 		$('.page-title').addClass('blur');
 
-  } else {
+  }
+  //else {
 
-    $('.page-title').removeClass('show');
+    //$('.parallax').removeClass('blur');
 
- 	};
-});
-$('.scroll').on('click', function(e){
-		e.preventDefault()
-
-  $('html, body').animate({
-      scrollTop : $(this.hash).offset().top
-    }, 1500);
+ 	//};
 });
