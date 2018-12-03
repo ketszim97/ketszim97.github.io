@@ -76,9 +76,14 @@ a {
 }
 
 
-a[ id= "aboutMe" ]:target ~ #menuBar article.panel {
+a[ id= "home" ]:target ~ #menuBar article.panel {
   -webkit-transform: translateY(50px);
   transform: translateY( 50px );
+}
+
+a[ id= "aboutMe" ]:target ~ #menuBar article.panel {
+  -webkit-transform: translateY(-1250px);
+  transform: translateY( -1250px );
 }
 
 a[ id= "completedProjects" ]:target ~ #menuBar article.panel {
@@ -106,4 +111,28 @@ a[ id= "contactMe" ]:target ~ #menuBar article.panel {
   transition: transform 0.6s ease-in-out;
   -webkit-backface-visibility: visible;
 
+}
+
+.float{
+     position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:10px;
+	background-color:rgba(0, 0, 0, 0.5);
+	color: rgba(255,255,255,1);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+     z-index: 1;
+     opacity: 0.6;
+}
+
+.float:hover{
+     opacity:1;
+}
+
+.up{
+     transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
 }
