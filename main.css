@@ -38,6 +38,7 @@ a:hover{
 
   font-family: "Helvetica";
   font-size: 30px;
+  font-size: 1.65vw;
   margin: 0px;
   text-align: center;
   padding: 120px;
@@ -52,6 +53,8 @@ a:hover{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .blur{
