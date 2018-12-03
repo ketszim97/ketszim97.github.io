@@ -23,6 +23,7 @@ body {
   transition: opacity 0.2s;
  -webkit-transition: opacity 0.2s;
  opacity: 0.2;
+ z-index: 1;
 }
 .page-title:hover{
      opacity: 1;
@@ -76,33 +77,33 @@ a {
 
 
 a[ id= "aboutMe" ]:target ~ #menuBar article.panel {
-  -webkit-transform: translateY(0px);
-  transform: translateY( 0px );
+  -webkit-transform: translateY(50px);
+  transform: translateY( 50px );
 }
 
 a[ id= "completedProjects" ]:target ~ #menuBar article.panel {
-  -webkit-transform: translateY(-1400px);
-  transform: translateY(-1400px);
+  -webkit-transform: translateY(-2050px);
+  transform: translateY(-2050px);
 }
 
 a[ id= "projectsInProgress" ]:target ~ #menuBar article.panel {
-  -webkit-transform: translateY(-1200px);
-  transform: translateY(-1200px);
+  -webkit-transform: translateY(-2850px);
+  transform: translateY(-2850px);
 }
 
 a[ id= "contactMe" ]:target ~ #menuBar article.panel {
-  -webkit-transform: translateY(-1200px);
-  transform: translateY(-1200px);
+  -webkit-transform: translateY(-3650px);
+  transform: translateY(-3650px);
 }
 
 .panel {
   width: 100%;
-  height: 0px; /* Your DIVs Height */
-  z-index:0;
+  height: 800px; /* Your DIVs Height */
+  z-index:-1;
   -webkit-transform: translateZ( 0 );
   transform: translateZ( 0 );
   -webkit-transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
+
 }
