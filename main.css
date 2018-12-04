@@ -135,7 +135,12 @@ a[ id= "contactMe" ]:target ~ #menuBar article.panel {
      opacity:1;
 }
 
-.up{
-     transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
+.arrow-up{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-bottom: 20px solid black;
+  z-index: 2;
 }
