@@ -4687,3 +4687,9 @@ input, select, textarea {
 		}
 
 	}
+ 
+
+
+  .no-italics {
+      font-style: normal;
+  }
