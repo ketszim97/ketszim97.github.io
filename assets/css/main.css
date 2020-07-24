@@ -3272,6 +3272,30 @@ input, select, textarea {
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
 		}
+		
+    #wrapper.fade-stab:before {
+			pointer-events: none;
+			-moz-transition: opacity 0.3s ease-in-out;
+			-webkit-transition: opacity 0.3s ease-in-out;
+			-ms-transition: opacity 0.3s ease-in-out;
+			transition: opacity 0.3s ease-in-out;
+			-moz-transition-delay: 0.3s;
+			-webkit-transition-delay: 0.3s;
+			-ms-transition-delay: 0.3s;
+			transition-delay: 0.3s;
+			background-image:url("../../images/2.jpg");
+			content: '';
+			display: block;
+			height: auto;
+			left: 0;
+			opacity: 0.2;
+			top: 0;
+			width: auto;
+		}
+
+		body.is-preload #wrapper.fade-stab:before {
+			opacity: 1;
+		}
 
 		@media screen and (orientation: portrait) {
 
