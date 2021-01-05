@@ -2634,7 +2634,15 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 4rem 0;
+			margin: auto;
+			margin-bottom: 2.5rem;
+			width: 85%;
+		}
+
+		.image.proj {
+			display: block;
+			margin: auto;
+			margin-bottom: 2.5rem;
 			width: 100%;
 		}
 
@@ -3272,7 +3280,7 @@ input, select, textarea {
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
 		}
-		
+
     #wrapper.fade-stab:before {
 			pointer-events: none;
 			-moz-transition: opacity 1s ease-in-out;
@@ -4712,7 +4720,7 @@ input, select, textarea {
 		}
 
 	}
- 
+
 
 
   .no-italics {
