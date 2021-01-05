@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>USB PD Source</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class = "fade-stab">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo">KHD</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../experience.html">Experience</a></li>
+							<li><a href="../projects.html">Projects</a></li>
+							<li><a href="../photos.html">Photos</a></li>
+							<li><a href="#footer" class="scrolly">Contact Me</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ketanhdesai/" class="icon brands fa-linkedin" target="_blank"><span class="label" target="_blank">Linkedin</span></a></li>
+							<li><a href="https://www.instagram.com/ketan_desai97/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/ketszim97" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							<li><a href="https://twitter.com/ketszim" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">November 28, 2019</span>
+									<h1>USB PD Source</h1>
+									<p>A board to convert old laptop/DC power supplies into USB Power Delivery compliant sources.<br />
+									This is designed to reduce on e-waste, by allowing old chargers to be used to power modern devices up to 100W.<br />
+									</p>
+								</header>
+                                        <div class="image main"><img src="../images/usb-pd-source/usb-pd-source-render1.png" alt="" /></div>
+                                        <p><b>USB C all the things!</b></br>
+									Like many hobbyists, I find myself regularly hanging on to old laptop/DC power supplies. On one hand I've always planned on using them for something, on the other, I've been trying to minimize my e-waste.</br>
+									So, I designed this! Using a screw terminal or a DC barrel jack as an input, and a USB C connector as an output, we can power modern devices that take advantage of the USB C Power Delivery specification. From phones to laptops, USB C should be the connector of the future!</p>
+                                        <p>USB PD can negotiate 5-20V at up to a current of 5A. This means a max power of <i> 100w!</i></br>
+									 I've chosen to design a board that contains a buck converter capable of a 100% duty cycle. This means that any power supply capable of 19.5 - 36V will allow generation of all possible PDOs.</p>
+									 <p><b>By default the device is configured to negotiate 5 preconfigured PDOs:</b></br>
+										 - 20V @ 5A</br>
+										 - 15V @ 5A</br>
+										 - 12V @ 5A</br>
+										 - 9V @ 5A</br>
+										 - 5V @ 5A</br>
+									 </p>
+									 <p> However, these can easily be adjusted using an <i>I2C</i> programming interface, as well as 0603 strapping resistors.</p>
+									 <div class="image main"><img src="../images/usb-pd-source/usb-pd-source-render2.png" alt="" /></div>
+									 <p><b>This board features:</b></br>
+	 									- 8A Buck Converter with 100% max duty cycle</br>
+	 									- LED indication of input power, output power, and negotiated voltage</br>
+	 									- DC barrel jack or screw terminal input rated at 8A</br>
+	 									- I2C solder points with pullup resistors</br>
+	 									- GPIO solder points indicating contract negotiation</br>
+	 									- 3.3V LDO
+	 								</p>
+									<div class="image main"><img src="../images/usb-pd-source/usb-pd-source-render3.png" alt="" /></div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:778-316-5097">(778) 316-5097</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:ketszim@gmail.com" target="_blank">ketszim@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/ketanhdesai/" class="icon brands alt fa-linkedin" target="_blank"><span class="label" target="_blank">Linkedin</span></a></li>
+									<li><a href="https://www.instagram.com/ketan_desai97/" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/ketszim97" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/ketszim" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Ketan Desai 2019</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
